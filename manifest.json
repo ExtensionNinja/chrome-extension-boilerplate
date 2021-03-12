@@ -1,0 +1,25 @@
+{
+    "name": "boilerplate",
+    "short_name": "boilerplate",
+    "description": "Extension.Ninja boilerplate",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "128": "icons/icon128.png"
+        },
+        "default_title": "Click Me"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "optional_permissions": [],
+    "host_permissions": [],
+    "icons": {
+        "128": "icons/icon128.png"
+    }
+}

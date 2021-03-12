@@ -1,0 +1,16 @@
+{
+    "name": "boilerplate",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "@types/chrome": "0.0.133",
+        "ts-loader": "8.0.18",
+        "typescript": "4.2.3",
+        "webpack": "5.24.4",
+        "webpack-cli": "4.5.0"
+    },
+    "scripts": {
+        "build": "rmdir /s out;npx webpack;Xcopy manifest.json out/manifest.json;Xcopy icons out/ /E",
+        "iBuild": "rm -rf out;npx webpack;cp manifest.json out/manifest.json;cp -r icons out/"
+    }
+}
